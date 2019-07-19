@@ -1,0 +1,16 @@
+
+server:
+  port: 8767
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://admin:${app.registry.password}@${eureka.instance.hostname}:8761/eureka/
+
+zuul:
+  routes:
+    api-f:
+      path: /api-f/**
+      serviceId: service-feign

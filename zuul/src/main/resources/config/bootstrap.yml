@@ -1,0 +1,8 @@
+
+app:
+  registry:
+    password: admin
+
+spring:
+  application:
+    name: service-zuul

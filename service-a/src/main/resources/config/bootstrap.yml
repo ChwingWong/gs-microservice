@@ -1,0 +1,13 @@
+
+app:
+  registry:
+    password: admin
+
+spring:
+  application:
+    name: service-a
+  cloud:
+    config:
+      label: master
+      uri: http://CONFIG-SERVER:8788/
+      profile: dev

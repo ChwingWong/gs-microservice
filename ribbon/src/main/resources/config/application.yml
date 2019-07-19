@@ -1,0 +1,11 @@
+
+server:
+  port: 8764
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://admin:${app.registry.password}@${eureka.instance.hostname}:8761/eureka/
